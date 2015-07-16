@@ -1,0 +1,25 @@
+<h1>Mi Sitio de Citas</h1>
+
+<% @accounts.each do |account| %>
+	<h3>Imagen Usuario</h3>			<p><%= account.profile_picture %></p>
+	<h3>Nombre</h3>					<p><%= account.first_name %></p>
+	<h3>Apellido</h3>				<p><%= account.last_name %></p>
+	<h3>Edad</h3>					<p><%= account.age %></p>
+	<h3>Fecha de Nacimiento</h3>	<p><%= account.birthdate %></p>
+	<h3>Genero</h3>					<p><%= account.gender %></p>
+	<h3>Telefono</h3>				<p><%= account.phone %></p>
+	<h3>Email</h3>					<p><%= account.email %></p>
+	<h3>Ubicación</h3>				<p><%= account.location %></p>
+	<h3>Altura</h3>					<p><%= account.height %></p>
+	<h3>Preferencia Sexual</h3>		<p><%= account.sexual_preference %></p>
+	<h3>Ocupación</h3>				<p><%= account.occupation %></p>
+	<h3>Educación</h3>				<p><%= account.education %></p>
+	<h3>Religion</h3>				<p><%= account.religion %></p>
+	<h3>Actividad Favorita</h3>		<p><%= account.favorite_activity %></p>
+	<h3>Comida Favorita</h3>		<p><%= account.favorite_food %></p>
+	<h3>Contraseña</h3>				<p><%= account.password %></p>
+	<h3>Verificación de Contraseña</h3> <p><%= account.password_verification %></p>
+	<h3>Alias</h3>				<p><%= account.alias %></p>
+	<h3>Referencia</h3>				<p><%= account.referral_source %></p>
+	<h3>Usuario Verificado</h3>		<p><%= account.verified %></p>
+<% end %>
